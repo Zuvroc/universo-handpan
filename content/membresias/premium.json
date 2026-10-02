@@ -1,0 +1,15 @@
+{
+  "id": "premium",
+  "nombre": "Premium",
+  "precio": 78000,
+  "periodo": "/mes",
+  "destacado": true,
+  "features": [
+    "Todo lo del plan Mensual",
+    "Cursos completos",
+    "Eventos especiales",
+    "Material exclusivo",
+    "15% en tienda"
+  ],
+  "cta": "Consultar"
+}

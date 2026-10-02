@@ -1,0 +1,11 @@
+{
+  "id": "workshop-afinacion",
+  "tipo": "Workshop",
+  "fecha": "23 Nov",
+  "titulo": "Workshop de Afinación",
+  "ubicacion": "Taller Universo",
+  "precio": "$40.000",
+  "vacantes": 3,
+  "total": 12,
+  "imagen": "/assets/evento-B0bRXrX4.jpg"
+}

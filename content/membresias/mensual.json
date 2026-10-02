@@ -1,0 +1,13 @@
+{
+  "id": "mensual",
+  "nombre": "Mensual",
+  "precio": 45000,
+  "periodo": "/mes",
+  "features": [
+    "4 clases grupales",
+    "Comunidad",
+    "Tutoriales",
+    "Beneficios en tienda"
+  ],
+  "cta": "Consultar"
+}

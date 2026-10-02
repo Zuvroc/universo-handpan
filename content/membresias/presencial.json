@@ -1,0 +1,12 @@
+{
+  "id": "presencial",
+  "nombre": "Alumno presencial",
+  "precio": 60000,
+  "periodo": "/mes",
+  "features": [
+    "8 clases presenciales",
+    "Instrumento en el estudio",
+    "Seguimiento personal"
+  ],
+  "cta": "Consultar"
+}

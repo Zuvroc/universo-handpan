@@ -1,0 +1,15 @@
+{
+  "id": "groove-polirritmia",
+  "nivel": "Intermedio",
+  "titulo": "Groove y Polirritmia",
+  "profesor": "Tomás Arce",
+  "semanas": 8,
+  "destaque": true,
+  "modulos": [
+    {"numero": "01", "titulo": "Subdivisiones"},
+    {"numero": "02", "titulo": "Ghost notes"},
+    {"numero": "03", "titulo": "Ritmos en 6/8"},
+    {"numero": "04", "titulo": "Polirritmia 3:2"},
+    {"numero": "05", "titulo": "Groove continuo"}
+  ]
+}

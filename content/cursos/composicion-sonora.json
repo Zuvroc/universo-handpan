@@ -1,0 +1,16 @@
+{
+  "id": "composicion-sonora",
+  "nivel": "Avanzado",
+  "titulo": "Composición Sonora",
+  "profesor": "Lucía Ferrer",
+  "semanas": 10,
+  "destaque": true,
+  "modulos": [
+    {"numero": "01", "titulo": "Escalas y modos"},
+    {"numero": "02", "titulo": "Forma musical"},
+    {"numero": "03", "titulo": "Dinámica"},
+    {"numero": "04", "titulo": "Narrativa"},
+    {"numero": "05", "titulo": "Grabación"},
+    {"numero": "06", "titulo": "Obra final"}
+  ]
+}

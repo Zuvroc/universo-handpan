@@ -1,0 +1,133 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/assets
+public_folder: /assets
+
+collections:
+  - name: "siteConfig"
+    label: "Configuración del Sitio"
+    files:
+      - name: "hero"
+        label: "Hero Principal"
+        file: "content/hero.json"
+        fields:
+          - {label: "Título", name: "titulo", widget: "string"}
+          - {label: "Subtítulo", name: "subtitulo", widget: "text"}
+          - {label: "CTA Principal", name: "ctaPrincipal", widget: "string"}
+          - {label: "CTA Secundario", name: "ctaSecundario", widget: "string"}
+          - {label: "Imagen", name: "imagen", widget: "image"}
+
+      - name: "stats"
+        label: "Estadísticas"
+        file: "content/stats.json"
+        fields:
+          - {label: "Alumnos", name: "alumnos", widget: "string"}
+          - {label: "Profesores", name: "profesores", widget: "string"}
+          - {label: "Cursos", name: "cursos", widget: "string"}
+
+      - name: "footer"
+        label: "Footer"
+        file: "content/footer.json"
+        fields:
+          - {label: "Nombre", name: "nombre", widget: "string"}
+          - {label: "Descripción", name: "descripcion", widget: "text"}
+          - {label: "Ubicación", name: "ubicacion", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+
+  - name: "cursos"
+    label: "Cursos"
+    folder: "content/cursos"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "ID", name: "id", widget: "string", hint: "Identificador único (slug)"}
+      - {label: "Nivel", name: "nivel", widget: "select", options: ["Principiante", "Intermedio", "Avanzado"]}
+      - {label: "Título", name: "titulo", widget: "string"}
+      - {label: "Profesor", name: "profesor", widget: "string"}
+      - {label: "Semanas", name: "semanas", widget: "number"}
+      - {label: "Destacado", name: "destaque", widget: "boolean", default: false}
+      - {label: "Imagen", name: "imagen", widget: "image", required: false}
+      - name: "modulos"
+        label: "Módulos"
+        widget: "list"
+        fields:
+          - {label: "Número", name: "numero", widget: "string"}
+          - {label: "Título", name: "titulo", widget: "string"}
+
+  - name: "eventos"
+    label: "Eventos"
+    folder: "content/eventos"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "ID", name: "id", widget: "string", hint: "Identificador único (slug)"}
+      - {label: "Tipo", name: "tipo", widget: "select", options: ["Masterclass", "Encuentro", "Concierto", "Workshop"]}
+      - {label: "Fecha", name: "fecha", widget: "string", hint: "Ej: 18 Oct"}
+      - {label: "Título", name: "titulo", widget: "string"}
+      - {label: "Ubicación", name: "ubicacion", widget: "string"}
+      - {label: "Precio", name: "precio", widget: "string", hint: "Ej: $25.000 o Libre"}
+      - {label: "Vacantes", name: "vacantes", widget: "number"}
+      - {label: "Total", name: "total", widget: "number"}
+      - {label: "Imagen", name: "imagen", widget: "image"}
+
+  - name: "productos"
+    label: "Productos"
+    folder: "content/productos"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "ID", name: "id", widget: "string", hint: "Identificador único (slug)"}
+      - {label: "Categoría", name: "categoria", widget: "select", options: ["Handpans", "Mini handpans", "Tongue drums", "Accesorios", "Udus", "Material educativo"]}
+      - {label: "Título", name: "titulo", widget: "string"}
+      - {label: "Precio", name: "precio", widget: "number"}
+      - {label: "Imagen", name: "imagen", widget: "image"}
+      - {label: "Descripción", name: "descripcion", widget: "text", required: false}
+
+  - name: "tutoriales"
+    label: "Tutoriales"
+    folder: "content/tutoriales"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "ID", name: "id", widget: "string", hint: "Identificador único (slug)"}
+      - {label: "Nivel", name: "nivel", widget: "select", options: ["Principiante", "Intermedio", "Avanzado"]}
+      - {label: "Categoría", name: "categoria", widget: "select", options: ["Técnica", "Ritmo", "Melodía", "Improvisación", "Percusión", "Meditación"]}
+      - {label: "Título", name: "titulo", widget: "string"}
+      - {label: "Duración", name: "duracion", widget: "string", hint: "Ej: 8 min"}
+      - {label: "URL Video", name: "videoUrl", widget: "string", required: false}
+
+  - name: "profesores"
+    label: "Profesores"
+    folder: "content/profesores"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "ID", name: "id", widget: "string", hint: "Identificador único (slug)"}
+      - {label: "Inicial", name: "inicial", widget: "string", hint: "Letra inicial para avatar"}
+      - {label: "Nombre", name: "nombre", widget: "string"}
+      - {label: "Rol", name: "rol", widget: "string"}
+      - {label: "Especialidad", name: "especialidad", widget: "string"}
+      - {label: "Bio", name: "bio", widget: "text"}
+      - {label: "Foto", name: "foto", widget: "image", required: false}
+
+  - name: "membresias"
+    label: "Membresías"
+    folder: "content/membresias"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "ID", name: "id", widget: "string", hint: "Identificador único (slug)"}
+      - {label: "Nombre", name: "nombre", widget: "string"}
+      - {label: "Precio", name: "precio", widget: "number"}
+      - {label: "Periodo", name: "periodo", widget: "string", default: "/mes"}
+      - {label: "Destacado", name: "destacado", widget: "boolean", default: false}
+      - {label: "CTA", name: "cta", widget: "string"}
+      - name: "features"
+        label: "Características"
+        widget: "list"
+        field: {label: "Feature", name: "feature", widget: "string"}
+
+site_url: https://universohandpan.com
+display_url: https://universohandpan.com

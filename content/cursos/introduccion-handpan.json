@@ -1,0 +1,16 @@
+{
+  "id": "introduccion-handpan",
+  "nivel": "Principiante",
+  "titulo": "Introducción al Handpan",
+  "profesor": "Lucía Ferrer",
+  "semanas": 6,
+  "destaque": true,
+  "modulos": [
+    {"numero": "01", "titulo": "Conociendo el instrumento"},
+    {"numero": "02", "titulo": "Postura y técnica"},
+    {"numero": "03", "titulo": "Primeros ritmos"},
+    {"numero": "04", "titulo": "Coordinación"},
+    {"numero": "05", "titulo": "Improvisación"},
+    {"numero": "06", "titulo": "Crear tu primera pieza"}
+  ]
+}

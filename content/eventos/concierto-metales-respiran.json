@@ -1,0 +1,11 @@
+{
+  "id": "concierto-metales-respiran",
+  "tipo": "Concierto",
+  "fecha": "9 Nov",
+  "titulo": "Concierto: Metales que Respiran",
+  "ubicacion": "Centro Cultural Recoleta",
+  "precio": "$18.000",
+  "vacantes": 48,
+  "total": 150,
+  "imagen": "/assets/evento-B0bRXrX4.jpg"
+}
