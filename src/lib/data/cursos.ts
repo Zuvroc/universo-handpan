@@ -5,7 +5,7 @@ export const cursos: Course[] = [
     id: 'introduccion-handpan',
     nivel: 'Principiante',
     titulo: 'Introducción al Handpan',
-    professor: 'Lucía Ferrer',
+    profesor: 'Lucía Ferrer',
     semanas: 6,
     modulos: [
       { numero: '01', titulo: 'Conociendo el instrumento' },
@@ -21,7 +21,7 @@ export const cursos: Course[] = [
     id: 'groove-polirritmia',
     nivel: 'Intermedio',
     titulo: 'Groove y Polirritmia',
-    professor: 'Tomás Arce',
+    profesor: 'Tomás Arce',
     semanas: 8,
     modulos: [
       { numero: '01', titulo: 'Subdivisiones' },
@@ -36,7 +36,7 @@ export const cursos: Course[] = [
     id: 'composicion-sonora',
     nivel: 'Avanzado',
     titulo: 'Composición Sonora',
-    professor: 'Lucía Ferrer',
+    profesor: 'Lucía Ferrer',
     semanas: 10,
     modulos: [
       { numero: '01', titulo: 'Escalas y modos' },

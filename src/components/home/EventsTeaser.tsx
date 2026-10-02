@@ -38,7 +38,7 @@ export function EventsTeaser() {
               <Card className="h-full overflow-hidden transition-shadow hover:shadow-lg">
                 <div className="relative aspect-video overflow-hidden">
                   <Image
-                    src={evento.imagen}
+                    src={evento.imagen || '/assets/evento-B0bRXrX4.jpg'}
                     alt={evento.titulo}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"

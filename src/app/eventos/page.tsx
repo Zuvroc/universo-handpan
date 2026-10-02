@@ -35,7 +35,7 @@ export default function EventosPage() {
               <Card key={evento.id} className="h-full overflow-hidden flex flex-col">
                 <div className="relative aspect-video overflow-hidden">
                   <Image
-                    src={evento.imagen}
+                    src={evento.imagen || '/assets/evento-B0bRXrX4.jpg'}
                     alt={evento.titulo}
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"

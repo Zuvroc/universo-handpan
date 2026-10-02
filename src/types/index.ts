@@ -7,7 +7,7 @@ export interface Course {
   id: string;
   nivel: 'Principiante' | 'Intermedio' | 'Avanzado';
   titulo: string;
-  professor: string;
+  profesor: string;
   semanas: number;
   modulos: CourseModule[];
   imagen?: string;
