@@ -72,7 +72,7 @@ export default function ComunidadPage() {
                       <p className="text-xs text-muted-foreground">{post.nivel}</p>
                     </div>
                   </div>
-                  <p className="text-sm text-foreground leading-relaxed">"{post.contenido}"</p>
+                  <p className="text-sm text-foreground leading-relaxed">&ldquo;{post.contenido}&rdquo;</p>
                   <div className="flex items-center gap-4 text-sm text-muted-foreground border-t pt-4">
                     <span className="flex items-center gap-1">♥ {post.likes}</span>
                     <span className="flex items-center gap-1">💬 {post.comentarios}</span>
