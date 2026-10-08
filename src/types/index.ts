@@ -67,6 +67,7 @@ export interface Membership {
 export interface SiteConfig {
   hero: {
     titulo: string;
+    tituloDestaque: string;
     subtitulo: string;
     ctaPrincipal: string;
     ctaSecundario: string;

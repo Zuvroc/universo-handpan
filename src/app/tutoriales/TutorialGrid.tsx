@@ -9,9 +9,9 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { tutoriales, niveles, categorias, getTutorialesFiltrados } from '@/lib/data/tutoriales';
 
 const nivelStyles: Record<string, string> = {
-  Principiante: 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400',
-  Intermedio: 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400',
-  Avanzado: 'bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-400',
+  Principiante: 'bg-transparent border-border text-muted-foreground',
+  Intermedio: 'bg-transparent border-border text-muted-foreground',
+  Avanzado: 'bg-transparent border-border text-muted-foreground',
 };
 
 export function TutorialGrid() {

@@ -10,21 +10,23 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="/" className="flex items-center space-x-2 font-bold text-xl">
-          <span className="hidden sm:block">UNIVERSO HANDPAN</span>
-          <span className="sm:hidden">UH</span>
+    <header className="sticky top-0 z-50 w-full glass">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
+        <Link
+          href="/"
+          className="font-display text-xl tracking-[0.25em] uppercase"
+        >
+          Universo <span className="text-gold">Handpan</span>
         </Link>
 
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden gap-6 text-sm text-muted-foreground lg:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                'text-sm font-medium transition-colors hover:text-primary',
-                pathname === link.href ? 'text-primary' : 'text-muted-foreground'
+                'transition-colors hover:text-foreground',
+                pathname === link.href ? 'text-foreground' : 'text-muted-foreground'
               )}
             >
               {link.label}
@@ -32,16 +34,13 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center space-x-4">
-          <Link href="/contacto">
-            <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
-              Contacto
-            </Button>
-          </Link>
-          <Button variant="default" size="sm" asChild>
-            <Link href="/contacto">Contacto</Link>
-          </Button>
-        </div>
+        <Button size="sm" asChild className="hidden lg:inline-flex">
+          <Link href="/contacto">Contacto</Link>
+        </Button>
+
+        <Button variant="ghost" size="sm" asChild className="lg:hidden">
+          <Link href="/contacto">Contacto</Link>
+        </Button>
       </div>
     </header>
   );

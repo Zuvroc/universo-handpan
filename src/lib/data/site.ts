@@ -2,7 +2,8 @@ import type { SiteConfig, NavLink } from '@/types';
 
 export const siteConfig: SiteConfig = {
   hero: {
-    titulo: 'El sonido que <em>nos reúne</em>',
+    titulo: 'El sonido que',
+    tituloDestaque: 'nos reúne',
     subtitulo:
       'Aprendé handpan con profesores dedicados, explorá cursos a tu ritmo y encontrate con una comunidad que vibra en la misma frecuencia.',
     ctaPrincipal: 'Empezar a tocar',
